@@ -31,19 +31,15 @@ int main()
 
 void DisplayGrid(bool grid[DEFY * DEFX])
 {
+    const char* cellImage[2] = { " ", "O" };
+
     for (int y = 0; y < DEFY; y++)
     {
         for(int x = 0; x < DEFX; x++)
         {
-            if(grid[DEFX * y + x] == true)
-                std::cout << "O";
-            else
-                std::cout << " ";
-
-            if(x == DEFX-1)
-                std::cout << std::endl;
+            std::cout << cellImage[grid[DEFX * y + x]];
         }
-
+        std::cout << std::endl;
     }
 
     return;

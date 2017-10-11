@@ -78,7 +78,7 @@ void Calculate(bool grid[DEFY * DEFX])
 				{
 					if (!(y0 == false && x0 == false))
 					{   //Fix ordering
-						if (cGrid[DEFX * (y + y0) + (x + x0)] == true) living++; //Add to living if there are any neighbors that are alive
+						living += (cGrid[DEFX * (y + y0) + (x + x0)]); //Add to living if there are any neighbors that are alive
 					}
 				}
 			}

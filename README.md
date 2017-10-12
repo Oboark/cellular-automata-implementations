@@ -1,2 +1,2 @@
-# game-of-life-implementations
-Implementations of Conway's Game of Life by Oboark
+# Various Cellular Automata
+Implementations of various cellular automata in various languages by Oboark
